@@ -1,32 +1,76 @@
+
+#all-content{
+    max-width: 2000px;
+    margin: 0 auto;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+}
+body {
+    width: 100%;
+}
+
 header a{
     font-family: 'Syncopate', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color:black;
+    color:#d5dbe2;
+    text-decoration: none;
+}
+header a:hover{
+    color: #4f6271
+}
+
+p {
+    max-width: 65ch;
+    overflow-wrap: break-word;
+    hyphens: auto;
 }
 
 h1{
-    font-family: 'Syncopate', sans-serif;
+    text-align: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Bodoni Moda', serif;
+    font-weight: bold;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    color: #262e44;
+    font-size: 3.7rem;
+
 }
 h2{
     font-family: 'Syncopate', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
+    color: #262e44;
 }
 
 h3{
     font-family: 'Syncopate', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
+    margin-left: 30px;
+    color: #313c45;
+}
+h4{
+    font-family: 'Syncopate', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-left: 20px;
+    color: #313c45;
 }
 
 body {
     background: #778ca4;
 }
 
-section {
+#main-contents{
     background: #d5dbe2;
 }
 
@@ -59,13 +103,10 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-
+    width: 100%;
+    margin-bottom: 60px;
 }
 
-#om-mig-header {
-    display: flex;
-    justify-content: center;
-}
 #projekt-beskrivelser-header {
     display: flex;
     justify-content: center;
@@ -75,17 +116,97 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 80px;
     width: 100%
+}
+#projekt-logoer img:hover {
+    transform: scale(1.2);
+    filter: hue-rotate(10deg) saturate(120%) brightness(139%);
+    transition: filter 0.3s ease, transform 0.3s ease; /* like how fast it does the filter and transform yk */
 }
 #kontakt-mig-header {
     display: flex;
     justify-content: center;
+    color:#d5dbe2;
 }
 #kontakt-mig-liste {
     display: flex;
     justify-content: space-evenly;
+    margin-bottom: 60px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 400;
+    line-height: 1.75;
+    letter-spacing: 0.01em;
+    font-size: 1.3rem;
 }
+#projekt-links-header{
+    display: flex;
+    justify-content: center;
+    margin-left: 60px;
+}
+#projekt-links{
+    display: flex;
+    justify-content: center;
+}
+
+#projekt-links a{
+    text-decoration: none;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 700;
+    line-height: 1.75;
+    letter-spacing: 0.01em;
+    margin-left: 60px;
+    font-size: 1.3rem;
+    color: #d5dbe2;
+}
+#projekt-links a:hover {
+    color: #26f7fd;
+}
+
+
 footer {
-    background-color: #313c45
+    display: flex;
+    flex-direction: column;
+    background-color: #313c45;
+    color:#d5dbe2;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    flex-grow: 1;
 }
+article{
+    font-family: 'Mulish', sans-serif;
+    font-weight: 400;
+    line-height: 1.75;
+    letter-spacing: 0.01em;
+    margin-left: 60px;
+}
+
+#jobs-og-uddannelse-sektionen{
+    flex-direction: column;
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    gap: 10px;
+
+}
+ #om-mig-header {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 20px;
+}
+#main-contents {
+    display: flex;
+    gap: 40px; /* Afstand mellem de to kolonner */
+    align-items: flex-start; /* Sørger for, at de flugter i toppen */
+}
+
+/* Sørger for, at begge sektioner deler pladsen ligeligt */
+#om-mig-sektionen,
+#jobs-og-uddannelse-sektionen {
+    flex: 1;
+}
+
+    #main-contents {
+        flex-wrap: wrap;
+    }
