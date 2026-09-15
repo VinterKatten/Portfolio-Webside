@@ -1,4 +1,12 @@
-
+img {
+    max-width: 100%;
+    height: auto;
+}
+.container {
+    width: 100%;
+    max-width: 1200px; /* Limits size on desktop, scales down on mobile */
+    box-sizing: border-box; /* Prevents padding from adding to total width */
+}
 
 html, body {
     margin: 0;
