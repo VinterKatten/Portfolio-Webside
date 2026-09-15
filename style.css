@@ -1,8 +1,4 @@
 
-#all-content{
-    max-width: 2000px;
-    margin: 0 auto;
-}
 
 html, body {
     margin: 0;
@@ -124,12 +120,12 @@ main{
     filter: hue-rotate(10deg) saturate(120%) brightness(139%);
     transition: filter 0.3s ease, transform 0.3s ease; /* like how fast it does the filter and transform yk */
 }
-#kontakt-mig-header {
+.kontakt-mig-header {
     display: flex;
     justify-content: center;
     color:#d5dbe2;
 }
-#kontakt-mig-liste {
+.kontakt-mig-liste {
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 60px;
@@ -187,7 +183,6 @@ article{
     font-family: 'Lato', sans-serif;
     font-size: 1rem;
     line-height: 1.6;
-    gap: 10px;
 
 }
  #om-mig-header {
@@ -197,11 +192,10 @@ article{
 }
 #main-contents {
     display: flex;
-    gap: 40px; /* Afstand mellem de to kolonner */
-    align-items: flex-start; /* Sørger for, at de flugter i toppen */
+    align-items: flex-start;
+    gap: 50px;
 }
 
-/* Sørger for, at begge sektioner deler pladsen ligeligt */
 #om-mig-sektionen,
 #jobs-og-uddannelse-sektionen {
     flex: 1;
