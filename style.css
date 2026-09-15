@@ -121,9 +121,10 @@ main{
     justify-content: center;
     align-items: center;
     gap: 80px;
-    width: 100%
+    max-width: 100%;
 }
 #projekt-logoer img:hover {
+    max-width: 100%;
     transform: scale(1.2);
     filter: hue-rotate(10deg) saturate(120%) brightness(139%);
     transition: filter 0.3s ease, transform 0.3s ease; /* like how fast it does the filter and transform yk */
