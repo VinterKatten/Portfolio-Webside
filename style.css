@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -5,17 +9,13 @@ img {
 .container {
     width: 100%;
     max-width: 1200px;
-    box-sizing: border-box; /* Prevents padding from adding to total width */
 }
 
-html, body {
+ body {
     margin: 0;
     padding: 0;
     width: 100%;
     min-height: 100vh;
-}
-body {
-    max-width: 100%
 }
 
 header a{
@@ -54,7 +54,7 @@ h1{
     letter-spacing: 0.08em;
     text-transform: uppercase;
     color: #262e44;
-    font-size: 3.7rem;
+    font-size: clamp(2.2rem, 6vw, 3.7rem);
 
 }
 h2{
@@ -83,13 +83,10 @@ body {
     background: #778ca4;
 }
 
-#main-contents{
-    background: #d5dbe2;
-}
-
 
 .logo {
-    width: 8%;
+    width: 120px;
+    max-width: 25vw;
 }
 
 nav {
@@ -124,6 +121,7 @@ main{
     align-items: center;
     gap: 80px;
     max-width: 100%;
+    flex-wrap: wrap;
 }
 #projekt-logoer img:hover {
     max-width: 100%;
@@ -177,7 +175,6 @@ footer {
     background-color: #313c45;
     color:#d5dbe2;
     max-width: 100%;
-    box-sizing: border-box;
     margin: 0;
     flex-grow: 1;
 }
@@ -205,6 +202,8 @@ article{
     display: flex;
     align-items: flex-start;
     gap: 50px;
+    flex-wrap: wrap;
+    background: #d5dbe2;
 }
 
 #om-mig-sektionen,
@@ -212,10 +211,57 @@ article{
     flex: 1;
 }
 
-#main-contents {
-        flex-wrap: wrap;
-    }
 
 #gå-tilbage{
     justify-content: center;
+}
+
+@media (max-width: 720px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+        padding: 15px;
+    }
+
+    .logo {
+        width: 120px;
+    }
+
+    nav {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+
+    #projekt-logoer {
+        gap: 30px;
+        flex-wrap: wrap;
+        padding: 0 20px;
+    }
+
+    #main-contents {
+        flex-direction: column;
+        gap: 20px;
+        padding: 0 20px;
+    }
+
+    article {
+        margin-left: 0;
+    }
+
+    #projekt-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #projekt-links a {
+        margin-left: 0;
+    }
+
+    .kontakt-mig-liste {
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.1rem;
+    }
 }
