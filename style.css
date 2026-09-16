@@ -4,7 +4,7 @@ img {
 }
 .container {
     width: 100%;
-    max-width: 1200px; /* Limits size on desktop, scales down on mobile */
+    max-width: 1200px;
     box-sizing: border-box; /* Prevents padding from adding to total width */
 }
 
@@ -15,7 +15,7 @@ html, body {
     min-height: 100vh;
 }
 body {
-    max-width: 100%;
+    max-width: 100%
 }
 
 header a{
@@ -176,7 +176,7 @@ footer {
     flex-direction: column;
     background-color: #313c45;
     color:#d5dbe2;
-    width: 100%;
+    max-width: 100%;
     box-sizing: border-box;
     margin: 0;
     flex-grow: 1;
