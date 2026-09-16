@@ -150,7 +150,6 @@ main{
 #projekt-links-header{
     display: flex;
     justify-content: center;
-    margin-left: 60px;
 }
 #projekt-links{
     display: flex;
@@ -236,11 +235,6 @@ article{
     nav {
         gap: 20px;
         flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    #projekt-beskrivelser-header {
-        display: flex;
         justify-content: center;
     }
 
