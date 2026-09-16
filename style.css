@@ -15,7 +15,7 @@ html, body {
     min-height: 100vh;
 }
 body {
-    width: 100%;
+    max-width: 100%;
 }
 
 header a{
@@ -27,6 +27,15 @@ header a{
 }
 header a:hover{
     color: #4f6271
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    background: #313c45;
+    max-width: 100%;
 }
 
 p {
@@ -78,13 +87,6 @@ body {
     background: #d5dbe2;
 }
 
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 30px;
-    background: #313c45;
-}
 
 .logo {
     width: 110px;
@@ -210,6 +212,10 @@ article{
     flex: 1;
 }
 
-    #main-contents {
+#main-contents {
         flex-wrap: wrap;
     }
+
+#gå-tilbage{
+    justify-content: center;
+}
