@@ -233,6 +233,10 @@ article{
         justify-content: center;
     }
 
+    #projekt-beskrivelser-header {
+        display: flex;
+        justify-content: center;
+    }
 
     #projekt-logoer {
         gap: 30px;
