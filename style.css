@@ -4,6 +4,10 @@
     font-weight: 400;
     font-style: normal;
 }
+
+html{
+    scroll-behavior: smooth;
+}
 * {
     box-sizing: border-box;
 }
@@ -63,8 +67,6 @@ h1{
     text-transform: uppercase;
     color: #262e44;
     font-size: clamp(2.2rem, 6vw, 3.3rem);
-    white-space: nowrap;
-
 }
 h2{
     font-family: 'Syncopate', sans-serif;
@@ -180,6 +182,7 @@ main{
 footer {
     display: flex;
     flex-direction: column;
+    align-items: center;
     background-color: #313c45;
     color:#d5dbe2;
     max-width: 100%;
@@ -219,6 +222,15 @@ article{
     flex: 1;
 }
 
+#gmail-logo{
+    width: 100px;
+    margin-bottom: 40px;
+}
+
+#gmail-logo:hover{
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
 
 #gå-tilbage{
     justify-content: center;
